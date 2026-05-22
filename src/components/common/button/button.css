@@ -1,0 +1,77 @@
+.button-xs {
+    font-size: 16px;
+}
+
+.button-sm {
+    font-size: 24px;
+}
+
+.button-md {
+    font-size: 36px;
+}
+
+.button-lg {
+    font-size: 48px;
+}
+
+.button-xl {
+    font-size: 64px;
+}
+
+.hover-color-transition {
+    transition-property: color, border-color;
+    transition-duration: 0.35s;
+}
+
+.main-hover:hover {
+    color: var(--primary);
+}
+.accent-hover:hover {
+    color: var(--accent);
+}
+.secondary-hover:hover {
+    color: var(--secondary);
+}
+.tertiary-hover:hover {
+    color: var(--tertiary);
+}
+.white-hover:hover {
+    color: white;
+}
+
+.main-focus:focus {
+    border: 3px solid var(--primary);
+    border-radius: 4px;
+}
+.accent-focus:focus {
+    border: 3px solid var(--accent);
+    border-radius: 4px;
+}
+.secondary-focus:focus {
+    border: 3px solid var(--secondary);
+    border-radius: 4px;
+}
+.tertiary-focus:focus {
+    border: 3px solid var(--tertiary);
+    border-radius: 4px;
+}
+.white-focus:focus {
+    border: 3px solid white;
+    border-radius: 4px;
+}
+
+.border-hover-main:hover .border-holder {
+    border-color: var(--primary);
+}
+.border-hover-accent:hover .border-holder {
+    border-color: var(--accent);
+}
+.border-hover-secondary:hover .border-holder {
+    border-color: var(--secondary);
+}
+.border-hover-tertiary:hover .border-holder {
+    border-color: var(--tertiary);
+}
+.border-hover-white:hover .border-holder {
+    border-color: white;
+}
