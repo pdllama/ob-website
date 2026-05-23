@@ -14,3 +14,11 @@ export default function Card({data_name='Card', sizing='size-full', children}:Pa
         </article>
     )
 }
+
+export function WrappedCard({data_name, sizing, children}:Partial<CardProps>) {
+    return (
+        <li className="relative self-stretch shrink-0 w-full">
+            <Card data_name={data_name} sizing={sizing}>{children}</Card>
+        </li>
+    )
+}

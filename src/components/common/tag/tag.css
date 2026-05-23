@@ -1,0 +1,9 @@
+.ui_design_tag_color {
+    background-color: #e76e32;
+    color: var(--primary);
+}
+
+.software_dev_tag_color {
+    background-color: var(--accent);
+    color: var(--primary);
+}

@@ -5,3 +5,13 @@
 .card-link {
     font-size: 16px;
 }
+
+
+.card-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 300px));
+    /* grid-template-columns: 1fr 1fr; */
+    justify-content: center;
+    place-items: center;
+    gap: 0.5rem;
+}

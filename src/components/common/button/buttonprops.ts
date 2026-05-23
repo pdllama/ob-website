@@ -3,7 +3,7 @@ import type { TypographyType } from "@/types/typography_types"
 import type { ReactNode } from "react"
 
 export type ButtonProps = {
-    bg_color: string
+    bg_color: string | null
     color: appcolor
     hover_color: appcolor
     data_name: string

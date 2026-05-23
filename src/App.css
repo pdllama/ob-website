@@ -18,6 +18,10 @@
   font-size: 24px;
 }
 
+.body3 {
+  font-size: 16px;
+}
+
 .button-text {
   letter-spacing: -2.25px;
 }
@@ -50,6 +54,13 @@
   .body2 {
     font-size: 14px;
   }
+}
+
+
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-xs: 37.5rem;
 }
 
 .bg-main {
@@ -101,8 +112,6 @@
   border-color: white;
 }
 
-@import "tailwindcss";
-
-@theme {
-  --breakpoint-xs: 37.5rem;
+.font-bold {
+  font-weight: 700
 }

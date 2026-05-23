@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Service Site",
+        "tags": ["ui_design"],
+        "description": "Coming Soon!",
+        "img_name": "placeholder.jpg",
+        "img_alt": "service site"
+    },
+    {
+        "title": "Memory Game",
+        "tags": ["ui_design"],
+        "description": "Coming Soon!",
+        "img_name": "placeholder.jpg",
+        "img_alt": "memory game"
+    },
+    {
+        "title": "Cat Mart",
+        "tags": ["ui_design", "software_dev"],
+        "description": "Coming Soon!",
+        "img_name": "placeholder.jpg",
+        "img_alt": "cat mart"
+    },
+    {
+        "title": "Analytics Site",
+        "tags": ["ui_design"],
+        "description": "Coming Soon!",
+        "img_name": "placeholder.jpg",
+        "img_alt": "analytics site"
+    }
+]

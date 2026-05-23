@@ -25,7 +25,12 @@ type CardLinkProps = DataNameProp & {
 }
 
 type CardTitleProps = ChildrenProp & {
-
+    color: appcolor
 }
 
-export type {CardProps, CardImageProps, CardBodyProps, CardLinkProps, CardTitleProps}
+type CardDescriptionProps = ChildrenProp & {
+    classes: string
+    color: appcolor
+}
+
+export type {CardProps, CardImageProps, CardBodyProps, CardLinkProps, CardTitleProps, CardDescriptionProps}

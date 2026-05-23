@@ -23,7 +23,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@components/*": ["./src/components/*"],
-      "@apptypes/*": ["./src/types/*"]
+      "@apptypes/*": ["./src/types/*"],
+      "@data/*": ["./src/data/*"]
     }
   },
   "include": ["vite.config.ts"]

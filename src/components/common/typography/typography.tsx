@@ -18,6 +18,6 @@ export default function Typography({type='body', color=null, classes='', childre
         case 'h4': return <h4 className={`heading-4 ${color === null ? '' : `text-${color}`} ${classes}`} >{children}</h4>;
         case 'h5': return <h5 className={`heading-5 ${color === null ? '' : `text-${color}`} ${classes}`} >{children}</h5>;
         case 'h6': return <h6 className={`heading-6 ${color === null ? '' : `text-${color}`} ${classes}`} >{children}</h6>;
-        default: return <p className={`${getTypeClass(type)} ${classes}`}>{children}</p>
+        default: return <p className={`${getTypeClass(type)} ${color === null ? '' : `text-${color}`} ${classes}`}>{children}</p>
     }
 }

@@ -3,7 +3,7 @@ import type { ButtonProps } from "./buttonprops";
 import "./button.css"
 
 export default function Button({
-  bg_color='main', color='white', hover_color='accent', size='md', text_type='button',
+  bg_color=null, color='white', hover_color='accent', size='md', text_type='button',
   x_padding='px-[32px]', y_padding='py-7px',
   data_name="Button", children, borderless=false,
   onClick=()=>{}}:Partial<ButtonProps>
@@ -14,7 +14,7 @@ export default function Button({
   return (
     <button 
       className={
-        `bg-${bg_color} ${text_type === 'button' ? `button-${size}` : ''} 
+        `${bg_color ? `bg-${bg_color}` : ''} ${text_type === 'button' ? `button-${size}` : ''} 
         cursor-pointer relative w-fit h-fit
         text-${color} rounded border-hover-${hover_color}
         ${hover_color}-hover hover-color-transition hover-border-color-transition

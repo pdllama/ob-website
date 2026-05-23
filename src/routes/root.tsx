@@ -1,6 +1,36 @@
 import Button from "@/components/common/button/button";
+import CardArea from "@/components/common/card/cardarea";
+import ProjectCard from "@/components/common/card/sets/projectcard";
 import Typography from "@/components/common/typography/typography";
+import type { Project } from "@/types/projects";
+import projects from "@data/projects.json"
 
+
+function ProjectsSection({}) {
+
+    return (
+        <section className="content-stretch flex flex-col gap-[16px] items-start justify-center py-[15px] relative size-full" data-name="Projects">
+            <div className="flex flex-col justify-center leading-[0] relative shrink-0 tracking-[-2.25px]">
+                <Typography type='h2' color='tertiary'>Projects</Typography>
+            </div>
+            <CardArea data_name="Project Cards">
+                {projects.map((p:any) => {
+                    const p_details = p as Project
+                    return (
+                        <ProjectCard 
+                            key={`${p_details.title}-card`}
+                            title={p_details.title}
+                            tags={p_details.tags}
+                            description={p_details.description}
+                            imgSrc={p_details.img_name}
+                            imgAlt={p_details.img_alt}
+                        />
+                    )
+                })}
+            </CardArea>
+        </section>
+    )
+}
 
 
 export default function Root({}) {
@@ -46,6 +76,7 @@ export default function Root({}) {
                     Resume
                 </Button>
             </div>
+            <ProjectsSection/>
         </main>
 
     )
