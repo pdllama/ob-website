@@ -115,3 +115,7 @@
 .font-bold {
   font-weight: 700
 }
+
+.text-wrap {
+  text-wrap: wrap;
+}
