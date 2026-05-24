@@ -66,7 +66,7 @@ export default function ChangingText({texts=['placeholder'], text_type='body', c
     const height_ref = useRef<number>(null)
     const screen_width_ref = useRef<number>(null)
 
-    const idx_ref = useRef(0);
+    const idx_ref = useRef(1);
 
 
     useEffect(() => {
