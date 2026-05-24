@@ -7,6 +7,8 @@ import projects from "@data/projects.json"
 import CodeBackground from "@/partials/effects/codebackground/codebackground";
 import { title_to_role } from "@/types/titles";
 import ChangingText from "@/partials/effects/texteffects/changingtext";
+import "./root.css"
+import { useNavigate } from "react-router";
 // import FlashingText from "@/partials/effects/texteffects/flashingtext";
 
 function ProjectsSection({}) {
@@ -37,6 +39,7 @@ function ProjectsSection({}) {
                                 description={p_details.description}
                                 imgSrc={p_details.img_name}
                                 imgAlt={p_details.img_alt}
+                                navLink={p_details.nav_link}
                             />
                         )
                     })}
@@ -49,6 +52,7 @@ function ProjectsSection({}) {
 
 export default function Root({}) {
 
+    const navigate = useNavigate()
 
     return (
         <>
@@ -66,7 +70,7 @@ export default function Root({}) {
             {/* <div className="content-stretch flex flex-col items-center absolute size-full" aria-hidden> */}
             <CodeBackground/>
             {/* </div> */}
-            <div className="content-stretch flex flex-col items-center leading-[0] relative gap-[20px] text-center w-full" data-name="Heading">
+            <div className="content-stretch flex flex-col items-center leading-[0] relative gap-[20px] text-center w-full smooth-in" data-name="Heading">
                 <div className="flex flex-row min-w-full justify-center relative tracking-[-3.24px] w-[min-content]">
                     <ChangingText 
                         texts={Object.values(title_to_role)}
@@ -80,21 +84,25 @@ export default function Root({}) {
                     <Typography type='h2' color='secondary'>Omar Bille</Typography>
                 </div>
             </div>
-            <div className="flex flex-col font-normal justify-center leading-[0] relative shrink-0 text-center tracking-[-1.08px] xs:px-[32px] px-[0px] max-w-[1000px]">
+            <div className="flex flex-col font-normal justify-center leading-[0] relative shrink-0 text-center tracking-[-1.08px] xs:px-[32px] px-[0px] max-w-[1000px] smooth-in-late">
                 <Typography type='body' classes='leading-[1.52]'>
                     I’m a full stack developer with a penchant for visual design. Among being interested in different computer-related disciplines, I am currently learning UI design at the University of Ottawa to effectively allow software users to accomplish their goals.
                 </Typography>
             </div>
-            <div className="content-stretch flex xs:flex-row flex-col gap-[30px] items-center justify-center relative shrink-0" data-name="Button Area">
+            <div className="content-stretch flex xs:flex-row flex-col gap-[30px] items-center justify-center relative shrink-0 smooth-in-late" data-name="Button Area">
                 <Button
                     bg_color='tertiary' color='white' hover_color="accent" size='md' y_padding="py-[1rem]"
-                    data_name='Projects Button' 
+                    // classes="absolute right-[30px]" no_relative
+                    data_name='Projects Button'
+                    onClick={() => navigate('/projects')} 
                 >
                     Projects
                 </Button>
                 <Button
                     bg_color='secondary' color='main' hover_color="tertiary" size='md' y_padding="py-[1rem]"
-                    data_name='Projects Button' 
+                    // classes="absolute left-[30px]" no_relative
+                    data_name='Resume Button' 
+                    onClick={() => navigate('/resume')} 
                 >
                     Resume
                 </Button>

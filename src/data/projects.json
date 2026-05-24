@@ -4,27 +4,31 @@
         "tags": ["ui_design"],
         "description": "Coming Soon!",
         "img_name": "placeholder.jpg",
-        "img_alt": "service site"
+        "img_alt": "service site image",
+        "nav_link": "service-site"
     },
     {
         "title": "Memory Game",
         "tags": ["ui_design"],
         "description": "Coming Soon!",
         "img_name": "placeholder.jpg",
-        "img_alt": "memory game"
+        "img_alt": "memory game image",
+        "nav_link": "memory-game"
     },
     {
         "title": "Cat Mart",
         "tags": ["ui_design", "software_dev"],
         "description": "Coming Soon!",
         "img_name": "placeholder.jpg",
-        "img_alt": "cat mart"
+        "img_alt": "cat mart image",
+        "nav_link": "cat-mart"
     },
     {
         "title": "Analytics Site",
         "tags": ["ui_design"],
         "description": "Coming Soon!",
         "img_name": "placeholder.jpg",
-        "img_alt": "analytics site"
+        "img_alt": "analytics site image",
+        "nav_link": "analytics-site"
     }
 ]

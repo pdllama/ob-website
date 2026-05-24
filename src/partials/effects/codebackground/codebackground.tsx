@@ -18,10 +18,10 @@ export default function CodeBackground({}) {
     return (
         <div 
             aria-hidden 
-            className="absolute inset-0 text-accent text-start overflow-y-hidden whitespace-pre mask-b-from-80% mask-b-to-100% opacity-15 blur-xs flex justify-center"
+            className="absolute inset-0 text-accent text-start overflow-y-hidden whitespace-pre mask-b-from-80% mask-b-to-100% opacity-30 blur-xs flex justify-center"
             style={{
                 top: `-${nav_height}px`,
-                height: '120%'
+                height: '140%'
             }}
             ref={div_ref}
         >

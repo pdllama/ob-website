@@ -58,6 +58,9 @@ export default function ChangingText({texts=['placeholder'], text_type='body', c
     const [text, set_text] = useState(texts[0])
     const [typing, set_typing] = useState(false)
     const [loop_toggle, set_loop_toggle] = useState(false)
+    const [screen_width, set_screen_width] = useState(window.innerWidth)
+
+
     const text_ref = useRef<HTMLHeadingElement|HTMLParagraphElement>(null)
     const span_ref = useRef<HTMLSpanElement>(null)
     const height_ref = useRef<number>(null)
@@ -69,6 +72,7 @@ export default function ChangingText({texts=['placeholder'], text_type='body', c
     useEffect(() => {
 
         window.addEventListener('resize', () => {
+            set_screen_width(window.innerWidth)
             height_ref.current = null
         })
 
@@ -93,7 +97,7 @@ export default function ChangingText({texts=['placeholder'], text_type='body', c
         if (!height_ref.current || height_ref.current < max_height) {
             height_ref.current = max_height
         }
-    })
+    }, [screen_width, text, loop_toggle])
 
     // const height_class = height_ref.current ? 
 

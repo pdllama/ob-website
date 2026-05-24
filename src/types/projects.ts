@@ -5,7 +5,8 @@ type Project = {
     tags: Titles[],
     description: string,
     img_name: string,
-    img_alt: string
+    img_alt: string,
+    nav_link: string
 }
 
 export type {Project}

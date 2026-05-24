@@ -1,12 +1,13 @@
 import Typography from "@components/common/typography/typography";
-import type { ButtonProps } from "./buttonprops";
+import type { TextButtonProps } from "./buttonprops";
 import "./button.css"
 
 export default function Button({
   bg_color=null, color='white', hover_color='accent', size='md', text_type='button',
   x_padding='px-[32px]', y_padding='py-7px',
   data_name="Button", children, borderless=false,
-  onClick=()=>{}}:Partial<ButtonProps>
+  classes="", no_relative=false,
+  onClick=()=>{}}:Partial<TextButtonProps>
 ) {
 
   const border_styles = borderless ? '' : `border-[2px] border-solid border-${color} border-holder rounded`
@@ -15,9 +16,10 @@ export default function Button({
     <button 
       className={
         `${bg_color ? `bg-${bg_color}` : ''} ${text_type === 'button' ? `button-${size}` : ''} 
-        cursor-pointer relative w-fit h-fit
+        cursor-pointer ${no_relative ? '' : 'relative'} w-fit h-fit
         text-${color} rounded border-hover-${hover_color}
         ${hover_color}-hover hover-color-transition hover-border-color-transition
+        ${classes}
         `
       } 
       data-name={data_name} 

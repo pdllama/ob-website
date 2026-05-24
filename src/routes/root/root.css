@@ -1,0 +1,22 @@
+
+@keyframes smooth-in {
+    0% {
+        opacity: 0%;
+        bottom: 100px;
+    }
+    50% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+        bottom: 0px;
+    }
+}
+
+.smooth-in {
+    animation: smooth-in 1s forwards;
+}
+
+.smooth-in-late {
+    animation: smooth-in 2s forwards;
+}

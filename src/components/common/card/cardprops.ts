@@ -1,14 +1,18 @@
 import type { appcolor } from "@/types/colors"
 import type { ChildrenProp, DataNameProp } from "@/types/props"
 import type { ReactNode } from "react"
+import type { ButtonWrapperProps } from "../button/buttonprops"
 
 type CardProps = DataNameProp & ChildrenProp &{
     sizing: string
+    button_wrap: boolean
+    button_wrap_props: Partial<ButtonWrapperProps>
 }
 
 type CardImageProps = DataNameProp & {
     src: string
     alt: string
+    classes: string
 }
 
 type CardBodyProps = DataNameProp & ChildrenProp & {
@@ -16,6 +20,7 @@ type CardBodyProps = DataNameProp & ChildrenProp & {
     bg_color: appcolor
     color: appcolor
     inner_body_data_name: string
+    classes: string
 }
 
 type CardLinkProps = DataNameProp & {
