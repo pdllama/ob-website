@@ -1,5 +1,4 @@
 import { useEffect, useState, useRef } from "react"
-import useWindowStore from "@/app/store/window_store"
 import { Stream } from "./codebackgroundtyping"
 
 type CodeBackgroundStreamProps = {
