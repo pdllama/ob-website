@@ -1,11 +1,11 @@
 [
     {
-        "title": "Service Site",
+        "title": "FunLearn",
         "tags": ["ui_design"],
-        "description": "Coming Soon!",
-        "img_name": "placeholder.jpg",
-        "img_alt": "service site image",
-        "nav_link": "service-site"
+        "description": "FunLearn is a prototype website for mock tutoring services which tutors children in Grades 1-12. It is a minimalist site which uses a simple professional style.",
+        "img_name": "funlearn",
+        "img_alt": "tutor teaching student",
+        "nav_link": "https://funlearn-website.netlify.app"
     },
     {
         "title": "Memory Game",

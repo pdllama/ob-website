@@ -24,6 +24,15 @@ export default function ProjectCard({
 
     const navigate = useNavigate()
 
+    const navigate_external = () => {
+        if (typeof navLink === 'string' && navLink.includes('http')) {
+            window.location.href = navLink
+        }
+        else {
+            navigate(`/projects/${navLink}`)
+        }
+    }
+
     return (
         <WrappedCard
             data_name={`${title} Card`}
@@ -33,10 +42,10 @@ export default function ProjectCard({
                     {className:'img-hover', styles: {'scale': '120%', 'transition': 'scale 0.5s'}},
                     {className: 'body-hover', styles: {'opacity': '20%', 'transition': 'opacity 0.1s'}}
                 ],
-                onClick: () => navigate(`/projects/${navLink}`)
+                onClick: navigate_external
             }}
         >
-            <CardImage src={imgSrc} alt={imgAlt} data_name={`${title} Image`} classes="img-hover"/>
+            <CardImage src={`project-images/${imgSrc}.jpg`} alt={imgAlt} data_name={`${title} Image`} classes="img-hover"/>
             <CardBody
                 data_name={`${title} Card Body`}
                 inner_body_data_name={`${title} Card Information`}
