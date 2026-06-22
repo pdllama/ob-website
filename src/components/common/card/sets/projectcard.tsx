@@ -45,7 +45,7 @@ export default function ProjectCard({
                 onClick: navigate_external
             }}
         >
-            <CardImage src={`project-images/${imgSrc}.jpg`} alt={imgAlt} data_name={`${title} Image`} classes="img-hover"/>
+            <CardImage src={`project-images/${imgSrc}`} alt={imgAlt} data_name={`${title} Image`} classes="img-hover"/>
             <CardBody
                 data_name={`${title} Card Body`}
                 inner_body_data_name={`${title} Card Information`}

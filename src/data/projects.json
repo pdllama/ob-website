@@ -3,17 +3,17 @@
         "title": "FunLearn",
         "tags": ["ui_design"],
         "description": "FunLearn is a prototype website for mock tutoring services which tutors children in Grades 1-12. It is a minimalist site which uses a simple professional style.",
-        "img_name": "funlearn",
+        "img_name": "funlearn.jpg",
         "img_alt": "tutor teaching student",
         "nav_link": "https://funlearn-website.netlify.app"
     },
     {
-        "title": "Memory Game",
+        "title": "Memory Maze",
         "tags": ["ui_design"],
-        "description": "Coming Soon!",
-        "img_name": "placeholder.jpg",
-        "img_alt": "memory game image",
-        "nav_link": "memory-game"
+        "description": "Memory Maze is a vibrant browser game where you must memorize a maze quickly in order to traverse it without touching the walls.",
+        "img_name": "memory-maze.png",
+        "img_alt": "memory maze image",
+        "nav_link": "https://memorymazegame.netlify.app"
     },
     {
         "title": "Cat Mart",
