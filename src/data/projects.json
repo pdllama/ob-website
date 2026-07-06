@@ -17,11 +17,11 @@
     },
     {
         "title": "Cat Mart",
-        "tags": ["ui_design", "software_dev"],
-        "description": "Coming Soon!",
-        "img_name": "placeholder.jpg",
+        "tags": ["ui_design"],
+        "description": "Cat Mart is an e-commerce application where users can browse and order cat-related products. It utilizes a simple design and adheres to Usability Heuristics.",
+        "img_name": "cat-mart.png",
         "img_alt": "cat mart image",
-        "nav_link": "cat-mart"
+        "nav_link": "https://cat-mart.netlify.app/"
     },
     {
         "title": "Analytics Site",
