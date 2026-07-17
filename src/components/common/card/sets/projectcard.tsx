@@ -54,7 +54,7 @@ export default function ProjectCard({
                 footer={<Typography color='white' type="body3">Read More →</Typography>}
             >
                 
-                <CardTitle color='white'>{title}</CardTitle>
+                <CardTitle color='white' length={title? title.length : 0}>{title}</CardTitle>
                 {tags?.length !== 0 && 
                 <TagArea data_name={`${title} Tags`}>
                     {tags?.map((tag:Titles) => {

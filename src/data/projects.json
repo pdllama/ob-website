@@ -12,7 +12,7 @@
         "tags": ["ui_design"],
         "description": "Memory Maze is a vibrant browser game where you must memorize a maze quickly in order to traverse it without touching the walls.",
         "img_name": "memory-maze.png",
-        "img_alt": "memory maze image",
+        "img_alt": "a maze with a square traversing through it",
         "nav_link": "https://memorymazegame.netlify.app"
     },
     {
@@ -20,15 +20,15 @@
         "tags": ["ui_design"],
         "description": "Cat Mart is an e-commerce application where users can browse and order cat-related products. It utilizes a simple design and adheres to Usability Heuristics.",
         "img_name": "cat-mart.png",
-        "img_alt": "cat mart image",
+        "img_alt": "a cat looking up",
         "nav_link": "https://cat-mart.netlify.app/"
     },
     {
-        "title": "Analytics Site",
+        "title": "Childcare Analytics",
         "tags": ["ui_design"],
-        "description": "Coming Soon!",
-        "img_name": "placeholder.jpg",
-        "img_alt": "analytics site image",
-        "nav_link": "analytics-site"
+        "description": "Childcare Analytics is a small dashboard showing annual childcare expense data in Canada. It focuses on simple presentation and interactivity.",
+        "img_name": "childcare-analytics.png",
+        "img_alt": "a line chart with multiple lines",
+        "nav_link": "https://childcare-analytics.netlify.app/"
     }
 ]

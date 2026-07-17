@@ -31,6 +31,7 @@ type CardLinkProps = DataNameProp & {
 
 type CardTitleProps = ChildrenProp & {
     color: appcolor
+    length: number
 }
 
 type CardDescriptionProps = ChildrenProp & {
