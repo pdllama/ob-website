@@ -1,34 +1,54 @@
 [
     {
         "title": "FunLearn",
+        "key": "funlearn",
         "tags": ["ui_design"],
         "description": "FunLearn is a prototype website for mock tutoring services which tutors children in Grades 1-12. It is a minimalist site which uses a simple professional style.",
-        "img_name": "funlearn.jpg",
+        "long_desc": "FunLearn is a mockup website offering tutoring services to students of all ages. It utilizes goal-oriented design and common visual design principles to exhibit a trustworthy, professional service. The goal of this website was to practice basic UI design principles in a controlled environment and showcase how well I can design a service-oriented website.",
         "img_alt": "tutor teaching student",
-        "nav_link": "https://funlearn-website.netlify.app"
+        "github": "https://github.com/pdllama/funlearn",
+        "nav_link": "https://funlearn-website.netlify.app",
+        "start_date": "2026-05-25T00:00:00.000Z",
+        "end_date": "2026-06-07T00:00:00.000Z",
+        "technologies": ["React", "Typescript", "React Router", "Tailwind"]
     },
     {
         "title": "Memory Maze",
+        "key": "memory-maze",
         "tags": ["ui_design"],
         "description": "Memory Maze is a vibrant browser game where you must memorize a maze quickly in order to traverse it without touching the walls.",
-        "img_name": "memory-maze.png",
+        "long_desc": "Colorful browser games like Memory Maze are also part of my toolkit! This one engages users in a memory game in which they must quickly memorize the layout of a maze and traverse it without touching the walls. This prototype was created to refine my application of visual design principles and goal-oriented design.",
         "img_alt": "a maze with a square traversing through it",
-        "nav_link": "https://memorymazegame.netlify.app"
+        "github": "https://github.com/pdllama/memorymaze",
+        "nav_link": "https://memorymazegame.netlify.app",
+        "start_date": "2026-06-08T00:00:00.000Z",
+        "end_date": "2026-06-21T00:00:00.000Z",
+        "technologies": ["React", "Typescript", "Tailwind"]
     },
     {
         "title": "Cat Mart",
+        "key": "cat-mart",
         "tags": ["ui_design"],
         "description": "Cat Mart is an e-commerce application where users can browse and order cat-related products. It utilizes a simple design and adheres to Usability Heuristics.",
-        "img_name": "cat-mart.png",
+        "long_desc": "In the digital age, online shopping has become the primary way to order items. The design of these applications are crucial, and Cat Mart doesn't fail to deliver. It is an e-commerce application where users can shop for a plethora of cat-related products. The focus was on good system design - how the application organizes and categorizes information. At the same time, visual design was not compromised.",
         "img_alt": "a cat looking up",
-        "nav_link": "https://cat-mart.netlify.app/"
+        "github": "https://github.com/pdllama/cat-mart",
+        "nav_link": "https://cat-mart.netlify.app/",
+        "start_date": "2026-06-22T00:00:00.000Z",
+        "end_date": "2026-07-05T00:00:00.000Z",
+        "technologies": ["React", "Material UI", "React Router", "Tailwind"]
     },
     {
         "title": "Childcare Analytics",
+        "key": "childcare-analytics",
         "tags": ["ui_design"],
         "description": "Childcare Analytics is a small dashboard showing annual childcare expense data in Canada. It focuses on simple presentation and interactivity.",
-        "img_name": "childcare-analytics.png",
+        "long_desc": "Childcare Analytics is a dashboard application showing 2 graphs related to childcare expenses in Canada. Data presentation is an important component of UI design and applications have to be designed with user's cognition in mind. The goal of this application was to practice graph design and incorporate clarity, context, and contrast into real analytics data.",
         "img_alt": "a line chart with multiple lines",
-        "nav_link": "https://childcare-analytics.netlify.app/"
+        "github": "https://github.com/pdllama/childcare-analytics",
+        "nav_link": "https://childcare-analytics.netlify.app/",
+        "start_date": "2026-07-06T00:00:00.000Z",
+        "end_date": "2026-07-19T00:00:00.000Z",
+        "technologies": ["React", "React Recharts", "Typescript", "Tailwind"]
     }
 ]

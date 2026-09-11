@@ -22,6 +22,10 @@ export type TextButtonProps = CommonButtonProps & {
     text_type: TypographyType 
 }
 
+export type ButtonLinkProps = Omit<TextButtonProps, 'onClick' |'text_type'> & {
+    to: string
+}
+
 type ButtonWrapperHoverStyles = {
     className: string,
     styles: Record<string, string|number>

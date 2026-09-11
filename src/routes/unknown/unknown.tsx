@@ -1,6 +1,11 @@
 import Typography from "@/components/common/typography/typography"
 
-export default function UnknownPage({}) {
+
+type UnknownPageProps = {
+    type: "general"|"project"
+}
+
+export default function UnknownPage({type="general"}:Partial<UnknownPageProps>) {
 
     return (
         <main
@@ -24,10 +29,17 @@ export default function UnknownPage({}) {
                 {/* <Typography type='h1' color='accent' classes="w-full">UI / UX Designer</Typography> */}
             </div>
             <div className="flex flex-col min-w-full w-[min-content] justify-center relative tracking-[-1px]">
-                <Typography type='h2' color='white'>Page Not Found</Typography>
+                <Typography type='h2' color='white'>
+                    {type === "general" ? "Page" : type === "project" && "Project"} Not Found
+                </Typography>
             </div>
             <div className="flex flex-col min-w-full w-[min-content] justify-center relative">
-                <Typography type='body2' color='white'>This page has either not been implemented yet, or does not exist!</Typography>
+                <Typography type='body2' color='white'>
+                    {
+                        type === "general" ? "This page has either not been implemented yet, or does not exist!" : 
+                        type === "project" && "This project does not exist and/or was removed."
+                    }
+                </Typography>
             </div>
         </main>
     )

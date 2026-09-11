@@ -3,8 +3,7 @@ import { WrappedCard } from "../card"
 import CardImage from "../cardimage"
 import CardBody from "../cardbody"
 import CardTitle from "../cardtitle"
-import TagArea from "../../tag/tagarea"
-import Tag from "../../tag/tag"
+import Tags from "../../tag/tags"
 import CardDescription from "../carddescription"
 import Typography from "../../typography/typography"
 import { useNavigate } from "react-router"
@@ -24,14 +23,6 @@ export default function ProjectCard({
 
     const navigate = useNavigate()
 
-    const navigate_external = () => {
-        if (typeof navLink === 'string' && navLink.includes('http')) {
-            window.location.href = navLink
-        }
-        else {
-            navigate(`/projects/${navLink}`)
-        }
-    }
 
     return (
         <WrappedCard
@@ -42,7 +33,7 @@ export default function ProjectCard({
                     {className:'img-hover', styles: {'scale': '120%', 'transition': 'scale 0.5s'}},
                     {className: 'body-hover', styles: {'opacity': '20%', 'transition': 'opacity 0.1s'}}
                 ],
-                onClick: navigate_external
+                onClick: !navLink ? undefined : () => navigate(navLink)
             }}
         >
             <CardImage src={`project-images/${imgSrc}`} alt={imgAlt} data_name={`${title} Image`} classes="img-hover"/>
@@ -55,16 +46,7 @@ export default function ProjectCard({
             >
                 
                 <CardTitle color='white' length={title? title.length : 0}>{title}</CardTitle>
-                {tags?.length !== 0 && 
-                <TagArea data_name={`${title} Tags`}>
-                    {tags?.map((tag:Titles) => {
-                        return (
-                            <Tag key={`${tag}-tag`} tag={tag}/>
-                        )
-                    })}
-                    
-                </TagArea>
-                }
+                <Tags title={title} tags={tags}/>
                 <CardDescription color='main' classes='py-[1rem]'>
                     {description}
                 </CardDescription>

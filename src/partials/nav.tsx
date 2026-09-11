@@ -28,7 +28,7 @@ function NavBar() {
             <div className="content-stretch flex flex-col xs:flex-row items-center justify-center px-[39px] py-[16px] relative size-full gap-[20px] xs:gap-[0px]">
             <Button data_name="Nav Button" borderless text_type='h2' x_padding="md:px-[32px] xs:px-[12px] px-[32px]" onClick={() => navigate('/')}>Home</Button>
             <Button data_name="Nav Button" borderless text_type='h2' x_padding="md:px-[32px] xs:px-[12px] px-[32px]" onClick={() => navigate('/about')}>About</Button>
-            <Button data_name="Nav Button" borderless text_type='h2' x_padding="md:px-[32px] xs:px-[12px] px-[32px]" onClick={() => navigate('/contact')}>Contact</Button>
+            <Button data_name="Nav Button" borderless text_type='h2' x_padding="md:px-[32px] xs:px-[12px] px-[32px]" onClick={() => navigate('/projects')}>Projects</Button>
             </div>
         </div>
         </section>

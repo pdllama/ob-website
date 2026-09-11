@@ -2,11 +2,15 @@ import type { Titles } from "./titles"
 
 type Project = {
     title: string,
+    key: string,
     tags: Titles[],
     description: string,
-    img_name: string,
+    long_desc: string,
     img_alt: string,
-    nav_link: string
+    github: string,
+    nav_link: string,
+    start_date: Date|undefined,
+    end_date: Date|undefined
 }
 
 export type {Project}

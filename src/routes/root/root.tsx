@@ -9,7 +9,6 @@ import { title_to_role } from "@/types/titles";
 import ChangingText from "@/partials/effects/texteffects/changingtext";
 import "./root.css"
 import { useNavigate } from "react-router";
-// import FlashingText from "@/partials/effects/texteffects/flashingtext";
 
 function ProjectsSection({}) {
 
@@ -37,9 +36,9 @@ function ProjectsSection({}) {
                                 title={p_details.title}
                                 tags={p_details.tags}
                                 description={p_details.description}
-                                imgSrc={p_details.img_name}
+                                imgSrc={`${p_details.key}.png`}
                                 imgAlt={p_details.img_alt}
-                                navLink={p_details.nav_link}
+                                navLink={`/projects/${p_details.key}`}
                             />
                         )
                     })}
